@@ -13,7 +13,7 @@ The microservice is deployed on Heroku. The URL is listed in this repo's descrip
 
 Tech stack used – MongoDB, Express, Node.js and Jest.
 
-This is the backend repository for Babbl. If you are looking for the frontend repository, [click here](https://github.com/ShanmukhSreenivas/babbl-frontend).
+This is the backend repository for Babbl. If you are looking for the frontend repository, [click here](https://github.com/saivittalb/babbl-frontend).
 
 Developed as a part of an end project for the course CS 474 – Enterprise Software Architecture.
 
@@ -30,7 +30,7 @@ Following versions were used in the development of this project:
 * [License](#license)
 * [Instructions to setup locally](#instructions-to-setup-locally)
   * [Installing modules](#installing-modules)
-* [Running the servers](#running-the-servers)
+  * [Running the servers](#running-the-servers)
   * [Testing the APIs](#testing-the-apis)
 * [APIs and their behavior](#apis-and-their-behavior)
 * [Validations](#validations)
