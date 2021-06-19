@@ -18,9 +18,15 @@ const apiLimiter = new rateLimit({
 });
 app.use("/api/", apiLimiter);
 
+const allowedOrigins = [process.env.URI, "http://localhost:3000"]
 var corsOptions = {
-  origin: process.env.URI || "http://localhost:3000",
-  optionsSuccessStatus: 200,
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 };
 
 app.use("/api/v1/auth", cors(corsOptions), auth);
