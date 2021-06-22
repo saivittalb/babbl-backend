@@ -16,7 +16,7 @@ const apiLimiter = new rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minute
   max: 100, // limit each IP to 100 requests per windowMs
 });
-app.use("/api/", apiLimiter);
+app.use("/api/v1/auth", apiLimiter);
 
 const allowedOrigins = [process.env.URI, "http://localhost:3000"]
 var corsOptions = {
